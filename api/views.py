@@ -43,7 +43,7 @@ def student_detail(request, id):
     
 
     if request.method == 'GET':
-        serializer = StudentSerializer(student)
+        serializer = StudentDetailSerializer(student)
         return Response(serializer.data, status=status.HTTP_200_OK)
     
 
